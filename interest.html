@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="The Interests Page of GLWs CV/Portfolio.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <title>GLW Interests</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#009fcd">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="icons/browserconfig.xml">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#134486">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#121212">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a class="navBar" href="index.html">Home</a></li>
+            <li><a class="navBar" href="qualifications.html">Qualifications</a></li>
+            <li><a class="navBar" href="interest.html">Interests</a></li>
+            <li><a class="navBar" href="cssdemo.html">Demos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h3>Interests:</h3>
+<img src="images/multiple-defenses-svgrepo-com.svg" alt="a SVG (Vector) image of 3 building blocks." width="64" height="64">
+<!-- Source:https://www.svgrepo.com/svg/530448/multiple-defenses -->
+<ol>
+    <li>Rugby</li>
+    <li>Networking</li>
+    <li>Gaming</li>
+</ol>
+
+<footer>This is Gian-Luca Wallace's Interests Page, his student ID is 22019065, this page was made for
+    Staffordshire University Level 4 Web Dev & Operating Systems Module.
+
+    <a href="https://validator.w3.org/check?uri=https%3A%2F%2Fglw-pwa-cv.web.app%2Finterest.html&charset=(detect+automatically)&doctype=Inline&group=0" target="_blank">HTML URL Validation</a>
+</footer>
+<script>
+    //check whether browser support service workers
+    if ('serviceWorker' in navigator) {
+        //wait until page loaded to avoid delaying rendering
+        window.addEventListener('load', function() {
+            //register service worker
+            navigator.serviceWorker.register('serviceworker.js').then(
+                function(registration) {
+                    console.log('Service worker registration successful',registration);
+                },
+                function(err) {
+                    console.log('Service worker registration failed', err);
+                });
+        });
+    }
+</script>
+</body>
+</html>
+
+<!-- The choice of content is yours as long as it is suitable for a CV / portfolio / site about yourself -->
+<!-- It could show your outside interests, or details about a computing topic you are interested in, such a cybersecurity, networks or programming-->
