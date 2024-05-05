@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="GLWs CV CSS & JS Demos.">
+    <meta name="description" content="Gian-Luca Wallace's CV Homepage">
     <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="manifest.json">
-    <title>CSS & JS Demo</title>
+    <title>Gian-Luca Portfolio - CV</title>
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
@@ -22,7 +22,7 @@
 
 <header>
     <nav>
-        <ul>
+        <ul id="NavUL">
             <li><a class="navBar" href="index.html">Home</a></li>
             <li><a class="navBar" href="qualifications.html">Qualifications</a></li>
             <li><a class="navBar" href="interest.html">Interests</a></li>
@@ -31,11 +31,23 @@
     </nav>
 </header>
 
-    <footer>
-        This is Gian-Luca Wallace's HTML/CSS Demo, his student ID is 22019065, this page was made for Staffordshire
-        University Level 4 Web Dev & Operating Systems Module.
-        <a href="https://validator.w3.org/check?uri=https%3A%2F%2Fglw-pwa-cv.web.app%2Fdemos.html&charset=(detect+automatically)&doctype=Inline&group=0" target="_blank">HTML URL Validation</a>
-    </footer>
+<div id="Flex1">
+    <picture><img id="GLWID" src="images/glw_uzsshz_c_scale_w_200.webp" alt="A photo of me, a ginger haired 20 year old."></picture>
+    <div>
+        <h1>Introduction</h1>
+        <p><em>Hey!</em> Nice to meet you and welcome to my front page, I'm Gian-Luca, I hope you're doing well at the time of reading this.</p>
+    </div>
+</div>
+
+
+
+
+<footer>This is Gian-Luca Wallace's Home page, his student ID is 22019065, this page was made for
+    Staffordshire University Level 4 Web Dev & Operating Systems Module.
+    <a class="HTMLVali" href="https://validator.w3.org/check?uri=https%3A%2F%2Fglw-pwa-cv.web.app%2Findex.html&charset=(detect+automatically)&doctype=Inline&group=0" target="_blank">HTML Validation</a>
+    <a class="HTMLVali" href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fglw-pwa-cv.web.app%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">CSS Validation</a>
+</footer>
+
 <script>
     //check whether browser support service workers
     if ('serviceWorker' in navigator) {
@@ -54,3 +66,12 @@
 </script>
 </body>
 </html>
+
+<!--
+•	This page should be the first page people get to
+•	This should advertise you and draw people into the application
+•	Content suggestions:
+•	All about you / interesting facts
+•	Information about your skills / hobbies
+•	Call to action for your qualifications and demos
+-->

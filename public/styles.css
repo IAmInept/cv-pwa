@@ -1,0 +1,185 @@
+/* Include your style in here for all pages. 
+Extra style for cssdemo.html can be added in cssdemo.css */
+
+/* Chad Dark Theme Enjoyers. */
+@media (prefers-color-scheme: dark) {
+    * {
+        color: #f0f0f0
+    }
+
+    header, footer {
+        background-color: #363636;
+    }
+
+    body {
+        background-color: #121212;
+    }
+
+    a.navBar {
+        color: #d3d3d3;
+    }
+
+    #Flex1 {
+        background-color: #242424;
+    }
+
+}
+/* Light Theme users. */
+@media (prefers-color-scheme: light) {
+    * {
+        color: #121212
+    }
+
+    header, footer {
+        background-color: #363636;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    a.navBar {
+        color: #d3d3d3;
+    }
+
+}
+
+/* CSS for Mobile */
+@media (max-width: 430px) {
+
+    body {
+        padding-bottom: 71px;
+        position: relative;
+        font-family: Aptos, Roboto, serif ;
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+    }
+
+    header {
+        max-width: 100vw;
+        bottom: 0;
+        position: fixed;
+    }
+
+    #NavUL {
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: 0;
+        margin: 8px;
+        height: 6vh;
+    }
+
+    nav {
+        box-sizing: border-box;
+        list-style-type: none;
+        text-decoration: none;
+        min-width: 100vw;
+        text-align: center;
+    }
+
+    a.navBar {
+
+        font-size: 13px;
+        display: inline-block;
+        text-decoration: none;
+        background: #484848;
+        border: 2px #484848 solid;
+        padding: 6px;
+    }
+
+    a.navBar:hover {
+        background: whitesmoke;
+        color:black;
+    }
+
+    #Flex1 {
+        box-sizing: border-box;
+        margin: 0;
+        padding: .5rem;
+        display: flex;
+        max-width: 100vw;
+        flex-flow: row wrap;
+    }
+    li {
+        display: inline;
+        margin: 2px;
+    }
+    img {
+        width: 128px;
+        height: 128px;
+    }
+
+    footer {
+        font-size: 12px;
+        max-width: 100vw;
+        bottom: 0
+    }
+
+}
+
+/* CSS for Tablet */
+@media (min-width: 430px) and (max-width: 770px) {
+
+}
+
+/* CSS at 1080p */
+@media (min-width: 770px) and (max-width: 2560px) {
+    body {
+        font-family: Aptos, Roboto, serif ;
+        overflow: hidden;
+        position: relative;
+        min-height: 100vh;
+        min-width: 100vh;
+        margin: 0;
+    }
+
+    nav {
+        list-style-type: none;
+        text-decoration: none;
+        box-sizing: border-box;
+        overflow: hidden;
+        padding: 0;
+        top: 0;
+        min-height: 45px;
+        width: 100%;
+    }
+
+    a.navBar {
+        text-decoration: none;
+        background: #484848;
+        border: 2px #484848 solid;
+        padding: 12px;
+    }
+
+    a.navBar:hover {
+        background: whitesmoke;
+        color:black;
+    }
+
+    footer {
+        position: absolute;
+        padding: 1.15rem;
+        width: 100%;
+        bottom: 0
+    }
+    header {
+        width: 100%;
+        top: 0
+    }
+
+    #Flex1 {
+        box-sizing: border-box;
+        display: flex;
+        gap: 2em;
+        padding: 1.5em;
+    }
+
+    li {
+        display: inline;
+        margin: 24px;
+        border-radius: 5px;
+    }
+}
+
