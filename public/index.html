@@ -23,22 +23,52 @@
 <header>
     <nav>
         <ul id="NavUL">
-            <li><a class="navBar" href="index.html">Home</a></li>
-            <li><a class="navBar" href="qualifications.html">Qualifications</a></li>
-            <li><a class="navBar" href="interest.html">Interests</a></li>
-            <li><a class="navBar" href="cssdemo.html">Demos</a></li>
+            <li class="NavLI"><a class="navBar" href="index.html">Home</a></li>
+            <li class="NavLI"><a class="navBar" href="qualifications.html">Qualifications</a></li>
+            <li class="NavLI"><a class="navBar" href="interest.html">Interests</a></li>
+            <li class="NavLI"><a class="navBar" href="demos.html">Demos</a></li>
         </ul>
     </nav>
 </header>
 
-<div id="Flex1">
-    <picture><img id="GLWID" src="images/glw_uzsshz_c_scale_w_200.webp" alt="A photo of me, a ginger haired 20 year old."></picture>
+<div id="flex1_Index">
+    <picture>
+        <img id="photoOfMe"
+                sizes="(max-width: 1103px) 100vw, 1103px"
+                srcset="
+                    images/Me_fgnvw4_c_scale_w_200.avif 607w,
+                    images/Me_fgnvw4_c_scale_w_607.avif 884w,
+                    images/Me_fgnvw4_c_scale_w_884.avif 1103w,"
+                src="images/Me_fgnvw4_c_scale_w_884.avif"
+                alt="A photo of me, with wet ginger hair, wearing a green t-shirt.">
+    </picture>
+
     <div>
         <h1>Introduction</h1>
-        <p><em>Hey!</em> Nice to meet you and welcome to my front page, I'm Gian-Luca, I hope you're doing well at the time of reading this.</p>
+        <p>Hey! Nice to meet you and welcome to my front page, I'm Gian-Luca, I hope you're doing well at the time of reading this.</p>
+
+        <h2>A Little About Me:</h2>
+        <ul>
+            <li> Age: 22</li>
+            <li> Studied Engineering</li>
+        </ul>
+
+        <p>I'm 22, Born on 24th of April 2002. I studied Engineering for 6 Years before coming to University, 3 years during GCSE, and then a following 3 years in college,
+            where I studied Mechanical Maintenance and Machining, working on both Manual and CNC Lathes, Mills. </p>
     </div>
 </div>
 
+<div id="flex2_Index">
+    <div>
+        <h2> Hobbies & Projects</h2>
+        <h3> Full-Stack Website /w Proxmox Integration.</h3>
+        <p>A personal Project I have recently started is the development of a full-stack website, using ViteJS & React for the frontend intergrated with the Proxmox API, using Flask (Python) running the backend.</p>
+    </div>
+    <div>
+        <h3>Switch/Router Auto-Configuration (Python).</h3>
+        <p> Another Project I have recently begun is the Automatic Detection and Identification of Switches & Routers on a network, to automatically setup and run scripts, this is done by using the Netmiko Python Library. </p>
+    </div>
+</div>
 
 
 

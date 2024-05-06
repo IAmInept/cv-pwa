@@ -30,27 +30,36 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         color: #121212
     }
 
+    h1, h2, h3{
+        color: #303f9f;
+    }
+
     header, footer {
-        background-color: #363636;
+        background-color: #e8f0fe;
     }
 
     body {
-        background-color: white;
+        background-color: #ffffff;
     }
 
     a.navBar {
-        color: #d3d3d3;
+        color: #e8f0fe;
+    }
+
+    #flex1_Index {
+        /*background-color: #303f9f;*/
     }
 
 }
 
 /* CSS for Mobile */
-@media (max-width: 430px) {
+@media (max-width: 770px) {
 
     body {
+        display: grid;
         padding-bottom: 71px;
+        padding-top: 71px;
         position: relative;
-        font-family: Aptos, Roboto, serif ;
         height: 100vh;
         width: 100vw;
         margin: 0;
@@ -67,8 +76,8 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         align-items: center;
         text-decoration: none;
         padding: 0;
-        margin: 8px;
-        height: 6vh;
+        margin: 6px;
+        height: 4vh;
     }
 
     nav {
@@ -80,7 +89,6 @@ Extra style for cssdemo.html can be added in cssdemo.css */
     }
 
     a.navBar {
-
         font-size: 13px;
         display: inline-block;
         text-decoration: none;
@@ -94,7 +102,7 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         color:black;
     }
 
-    #Flex1 {
+    #flex1_Index, #flex2_Index {
         box-sizing: border-box;
         margin: 0;
         padding: .5rem;
@@ -102,32 +110,36 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         max-width: 100vw;
         flex-flow: row wrap;
     }
-    li {
+
+    li.NavLI {
+        text-align: center;
         display: inline;
         margin: 2px;
+        border-radius: 5px;
     }
-    img {
-        width: 128px;
-        height: 128px;
+
+    #photoOfMe {
+        display: block;
+        margin: auto;
+        max-width: 128px;
+        max-height: 128px;
+
     }
 
     footer {
+        text-align: center;
+        position: absolute;
         font-size: 12px;
         max-width: 100vw;
-        bottom: 0
+        padding: 0.25rem;
+        top: 0
     }
-
-}
-
-/* CSS for Tablet */
-@media (min-width: 430px) and (max-width: 770px) {
 
 }
 
 /* CSS at 1080p */
-@media (min-width: 770px) and (max-width: 2560px) {
+@media (min-width: 770px) {
     body {
-        font-family: Aptos, Roboto, serif ;
         overflow: hidden;
         position: relative;
         min-height: 100vh;
@@ -164,22 +176,45 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         width: 100%;
         bottom: 0
     }
+
     header {
         width: 100%;
         top: 0
     }
 
-    #Flex1 {
+    #flex1_Index, #flex2_Index {
         box-sizing: border-box;
         display: flex;
         gap: 2em;
         padding: 1.5em;
     }
 
-    li {
+    #flex1_Demo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        box-sizing: border-box;
+        margin: 2rem;
+        gap: 5rem;
+        padding: .5rem;
+        max-width: 100vw;
+    }
+
+    li.NavLI {
         display: inline;
         margin: 24px;
         border-radius: 5px;
     }
+
+    #photoOfMe {
+        justify-content: center;
+        align-items: center;
+        width: 256px;
+        height: 256px;
+    }
 }
 
+body {
+    font-family: Aptos, Bahnschrift, Roboto, serif;
+}
