@@ -35,10 +35,7 @@
     <picture>
         <img id="photoOfMe"
                 sizes="(max-width: 1103px) 100vw, 1103px"
-                srcset="
-                    images/Me_fgnvw4_c_scale_w_200.avif 607w,
-                    images/Me_fgnvw4_c_scale_w_607.avif 884w,
-                    images/Me_fgnvw4_c_scale_w_884.avif 1103w,"
+                srcset="images/Me_fgnvw4_c_scale_w_200.avif 607w, images/Me_fgnvw4_c_scale_w_607.avif 884w, images/Me_fgnvw4_c_scale_w_884.avif 1103w"
                 src="images/Me_fgnvw4_c_scale_w_884.avif"
                 alt="A photo of me, with wet ginger hair, wearing a green t-shirt.">
     </picture>
@@ -59,24 +56,34 @@
 </div>
 
 <div id="flex2_Index">
-    <div>
+    <div class="flex2_div">
         <h2> Hobbies & Projects</h2>
         <h3> Full-Stack Website /w Proxmox Integration.</h3>
         <p>A personal Project I have recently started is the development of a full-stack website, using ViteJS & React for the frontend intergrated with the Proxmox API, using Flask (Python) running the backend.</p>
     </div>
-    <div>
+    <div class="flex2_div">
         <h3>Switch/Router Auto-Configuration (Python).</h3>
         <p> Another Project I have recently begun is the Automatic Detection and Identification of Switches & Routers on a network, to automatically setup and run scripts, this is done by using the Netmiko Python Library. </p>
+    </div>
+    <div class="flex2_div">
+        <h3>Docker & Kubernetes</h3>
+        <p> Another Project that I have plans to begin working on in the future </p>
+    </div>
+    <div class="flex2_div">
+        <h3>PC Form factor Downgrade</h3>
+        <p> A project I have plans to do later this year, regarding my current desktop and downsizing the form factor to make it easier for travel. </p>
     </div>
 </div>
 
 
+<div id="flex_Footer">
+    <footer>This is Gian-Luca Wallace's Home page, his student ID is 22019065, this page was made for
+        Staffordshire University Level 4 Web Dev & Operating Systems Module.
+        <a class="HTMLVali" href="https://validator.w3.org/check?uri=https%3A%2F%2Fglw-pwa-cv.web.app%2Findex.html&charset=(detect+automatically)&doctype=Inline&group=0" target="_blank">HTML Validation</a>
+        <a class="HTMLVali" href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fglw-pwa-cv.web.app%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">CSS Validation</a>
+    </footer>
+</div>
 
-<footer>This is Gian-Luca Wallace's Home page, his student ID is 22019065, this page was made for
-    Staffordshire University Level 4 Web Dev & Operating Systems Module.
-    <a class="HTMLVali" href="https://validator.w3.org/check?uri=https%3A%2F%2Fglw-pwa-cv.web.app%2Findex.html&charset=(detect+automatically)&doctype=Inline&group=0" target="_blank">HTML Validation</a>
-    <a class="HTMLVali" href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fglw-pwa-cv.web.app%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">CSS Validation</a>
-</footer>
 
 <script>
     //check whether browser support service workers

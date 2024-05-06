@@ -17,6 +17,13 @@ Extra style for cssdemo.html can be added in cssdemo.css */
 
     a.navBar {
         color: #d3d3d3;
+        background: #484848;
+        border: 2px #484848 solid;
+    }
+
+    a.navBar:hover {
+        background: whitesmoke;
+        color:black;
     }
 
     #Flex1 {
@@ -44,8 +51,14 @@ Extra style for cssdemo.html can be added in cssdemo.css */
 
     a.navBar {
         color: #e8f0fe;
+        background: #303f9f;
+        border: 2px #303f9f solid;
     }
 
+    a.navBar:hover {
+        background: whitesmoke;
+        color:black;
+    }
     #flex1_Index {
         /*background-color: #303f9f;*/
     }
@@ -57,8 +70,7 @@ Extra style for cssdemo.html can be added in cssdemo.css */
 
     body {
         display: grid;
-        padding-bottom: 71px;
-        padding-top: 71px;
+        padding-top: 65px;
         position: relative;
         height: 100vh;
         width: 100vw;
@@ -92,14 +104,14 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         font-size: 13px;
         display: inline-block;
         text-decoration: none;
-        background: #484848;
-        border: 2px #484848 solid;
         padding: 6px;
     }
 
-    a.navBar:hover {
-        background: whitesmoke;
-        color:black;
+    li.NavLI {
+        text-align: center;
+        display: inline;
+        margin: 2px;
+        border-radius: 5px;
     }
 
     #flex1_Index, #flex2_Index {
@@ -111,11 +123,8 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         flex-flow: row wrap;
     }
 
-    li.NavLI {
-        text-align: center;
-        display: inline;
-        margin: 2px;
-        border-radius: 5px;
+    #flex2_Index {
+        padding-bottom: 34px;
     }
 
     #photoOfMe {
@@ -124,6 +133,16 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         max-width: 128px;
         max-height: 128px;
 
+    }
+
+    #YetAnotherFlexBox {
+        display: flex;
+        flex-flow: row wrap;
+        box-sizing: border-box;
+        max-width: 100vw;
+        max-height: 100vh;
+        padding: .5rem;
+        margin: 0;
     }
 
     footer {
@@ -135,18 +154,29 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         top: 0
     }
 
+    #flex_Footer {
+        display: flex;
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+
+    img {
+        width: 90vw;
+        height: 100%;
+    }
+
 }
 
 /* CSS at 1080p */
 @media (min-width: 770px) {
     body {
-        overflow: hidden;
         position: relative;
         min-height: 100vh;
         min-width: 100vh;
+        padding-top: 34px;
         margin: 0;
-    }
 
+    }
     nav {
         list-style-type: none;
         text-decoration: none;
@@ -154,30 +184,32 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         overflow: hidden;
         padding: 0;
         top: 0;
+        max-width: 100vw;
+        max-height: 100vh;
         min-height: 45px;
-        width: 100%;
     }
 
     a.navBar {
         text-decoration: none;
-        background: #484848;
-        border: 2px #484848 solid;
         padding: 12px;
     }
 
-    a.navBar:hover {
-        background: whitesmoke;
-        color:black;
-    }
-
     footer {
-        position: absolute;
-        padding: 1.15rem;
-        width: 100%;
-        bottom: 0
+        position: relative;
+        max-width: 100vw;
+        max-height: 100vh;
+        bottom: 0;
+        padding: 0.5em;
+    }
+    #flex_Footer {
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+        max-height: 100vh;
     }
 
     header {
+        position: fixed;
         width: 100%;
         top: 0
     }
@@ -188,7 +220,16 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         gap: 2em;
         padding: 1.5em;
     }
-
+    #flex2_Index {
+        flex-direction: row;
+        gap: 0;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        box-sizing: border-box;
+    }
+    .flex2_div {
+        width: 50%
+    }
     #flex1_Demo {
         display: flex;
         justify-content: center;
@@ -210,11 +251,18 @@ Extra style for cssdemo.html can be added in cssdemo.css */
     #photoOfMe {
         justify-content: center;
         align-items: center;
-        width: 256px;
-        height: 256px;
+        width: 512px;
+        height: 512px;
+    }
+
+    img {
+        width: 512px;
     }
 }
 
 body {
     font-family: Aptos, Bahnschrift, Roboto, serif;
 }
+
+/* TODO - Fully Flesh out Light theme */
+/* TODO - Fix Picture Not Centering */
