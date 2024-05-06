@@ -26,6 +26,17 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         color:black;
     }
 
+    a.JSDemo {
+        color: #d3d3d3;
+        background: #484848;
+        border: 2px #484848 solid;
+    }
+
+    a.JSDemo:hover {
+        background: whitesmoke;
+        color:black;
+    }
+
     #Flex1 {
         background-color: #242424;
     }
@@ -114,20 +125,39 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         border-radius: 5px;
     }
 
-    #flex1_Index, #flex2_Index {
+    #flex_Index_MainPage, #flex_Index_Hobbies {
         box-sizing: border-box;
         margin: 0;
-        padding: .5rem;
         display: flex;
         max-width: 100vw;
         flex-flow: row wrap;
+    }
+    #flex_Index_Hobbies {
+        padding-bottom: 50px;
     }
 
     #flex2_Index {
         padding-bottom: 34px;
     }
 
-    #photoOfMe {
+    .flex1_Div_Demo {
+        min-width: 45vw;
+        max-width: 75vw;
+
+    }
+    #flex1_Demo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        flex-basis: 100vw;
+        max-width: 95vw;
+        margin: auto;
+        column-gap: 5px;
+        row-gap: 10px;
+    }
+
+    .photoOfMe {
         display: block;
         margin: auto;
         max-width: 128px;
@@ -160,11 +190,26 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         max-height: 100vh;
     }
 
-    img {
-        width: 90vw;
-        height: 100%;
+    #VectorImg {
+        width: 32px;
+        height: 32px;
+    }
+    #CSS {
+        justify-content: center;
+        align-self: center;
+        min-width: 5vw;
+        max-width: 16vw;
+    }
+    #JS {
+        justify-content: center;
+        align-self: center;
+        min-width: 5vw;
+        max-width: 16vw;
     }
 
+    article {
+        padding-bottom: 44px;
+    }
 }
 
 /* CSS at 1080p */
@@ -214,30 +259,47 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         top: 0
     }
 
-    #flex1_Index, #flex2_Index {
+    #flex_Index_MainPage, #flex_Index_Hobbies {
         box-sizing: border-box;
         display: flex;
-        gap: 2em;
-        padding: 1.5em;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        gap: 1em;
+        padding: 1em;
     }
+
+    #flex_Index_Intro {
+        min-width: 20vw;
+        max-width: 60vw;
+    }
+
+    .flex2_div{
+        max-width: 45vw;
+
+    }
+
     #flex2_Index {
         flex-direction: row;
         gap: 0;
         flex-wrap: wrap;
-        flex-basis: 50%;
+        flex-basis: 20vw;
         box-sizing: border-box;
     }
-    .flex2_div {
-        width: 50%
+
+    .flex1_Div_Demo {
+        min-width: 35vw;
+        max-width: 75vw;
     }
+
     #flex1_Demo {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: row wrap;
+        flex-direction: row;
+        flex-wrap: wrap;
         box-sizing: border-box;
+        flex-basis: 100vw;
         margin: 2rem;
-        gap: 5rem;
+        gap: 1rem;
         padding: .5rem;
         max-width: 100vw;
     }
@@ -248,20 +310,51 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         border-radius: 5px;
     }
 
-    #photoOfMe {
+    .photoOfMe {
         justify-content: center;
         align-items: center;
-        width: 512px;
-        height: 512px;
+        width: 256px;
+        height: 256px;
+        border: #242424 3px solid;
     }
 
-    img {
-        width: 512px;
+    #VectorImg {
+        width: 32px;
+        height: 32px;
+    }
+    #HTMLVali {
+        padding: 4px;
+        border: #242424 2px solid;
+    }
+
+    #CSS {
+        justify-content: center;
+        align-self: center;
+        min-width: 2vw;
+        max-width: 13vw;
+    }
+
+    #JS {
+        justify-content: center;
+        align-self: center;
+        min-width: 2vw;
+        max-width: 13vw;
     }
 }
 
 body {
     font-family: Aptos, Bahnschrift, Roboto, serif;
+}
+
+a.JSDemo {
+    font-size: 13px;
+    text-decoration: none;
+    padding: 6px;
+}
+
+* {
+    max-width: 100vw;
+    max-height: 100vh;
 }
 
 /* TODO - Fully Flesh out Light theme */

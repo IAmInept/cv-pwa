@@ -31,31 +31,32 @@
     </nav>
 </header>
 
-<div id="flex1_Index">
+<div id="flex_Index_MainPage">
     <picture>
-        <img id="photoOfMe"
-                sizes="(max-width: 1103px) 100vw, 1103px"
-                srcset="images/Me_fgnvw4_c_scale_w_200.avif 607w, images/Me_fgnvw4_c_scale_w_607.avif 884w, images/Me_fgnvw4_c_scale_w_884.avif 1103w"
-                src="images/Me_fgnvw4_c_scale_w_884.avif"
-                alt="A photo of me, with wet ginger hair, wearing a green t-shirt.">
+        <!-- Main Photo Served to Phones Under 420px width-->
+    <source class="photoOfMe" srcset="images/IMG_20240315_175735_544_ideawa_c_scale_w_200.avif" media="(max-width: 425px)" type="image/avif">
+        <!-- Fallback Photo Served to Tablets under 758px width-->
+    <source class="photoOfMe" srcset="images/IMG_20240315_175735_544.webp" media="(max-width: 768px)" type="image/webp">
+        <!-- If all else fails.-->
+    <img class="photoOfMe" src="images/IMG_20240315_175735_544.jpg" alt="A photo of me, with ginger hair, wearing a green t-shirt">
     </picture>
 
-    <div>
+    <div id="flex_Index_Intro">
         <h1>Introduction</h1>
-        <p>Hey! Nice to meet you and welcome to my front page, I'm Gian-Luca, I hope you're doing well at the time of reading this.</p>
-
+        <p><em>Hey! Nice to meet you and welcome to my front page,</em> I'm Gian-Luca, I hope you're doing well at the time of reading this.</p>
         <h2>A Little About Me:</h2>
         <ul>
             <li> Age: 22</li>
             <li> Studied Engineering</li>
         </ul>
-
+    </div>
+    <div id="flex_Index_AboutMeFurther">
         <p>I'm 22, Born on 24th of April 2002. I studied Engineering for 6 Years before coming to University, 3 years during GCSE, and then a following 3 years in college,
             where I studied Mechanical Maintenance and Machining, working on both Manual and CNC Lathes, Mills. </p>
     </div>
 </div>
 
-<div id="flex2_Index">
+<div id="flex_Index_Hobbies">
     <div class="flex2_div">
         <h2> Hobbies & Projects</h2>
         <h3> Full-Stack Website /w Proxmox Integration.</h3>
@@ -67,7 +68,7 @@
     </div>
     <div class="flex2_div">
         <h3>Docker & Kubernetes</h3>
-        <p> Another Project that I have plans to begin working on in the future </p>
+        <p> Another Project that I have plans to begin working on in the future, working with Docker, and Docker Managers, such as Kubernetes. Additionally, I plan to re-size my current Proxmox Server.</p>
     </div>
     <div class="flex2_div">
         <h3>PC Form factor Downgrade</h3>
@@ -101,6 +102,7 @@
         });
     }
 </script>
+
 </body>
 </html>
 
