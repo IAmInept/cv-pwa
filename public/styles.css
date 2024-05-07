@@ -41,6 +41,14 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         background-color: #242424;
     }
 
+    #flex_Index_MainPage {
+        background: #161616;
+    }
+
+    .flex2_div{
+        background-color: #242424;
+    }
+
 }
 /* Light Theme users. */
 @media (prefers-color-scheme: light) {
@@ -73,6 +81,25 @@ Extra style for cssdemo.html can be added in cssdemo.css */
     #flex1_Index {
         /*background-color: #303f9f;*/
     }
+    a.JSDemo {
+        color: #e8f0fe;
+        background: #303f9f;
+        border: 2px #303f9f solid;
+    }
+
+    a.JSDemo:hover {
+        background: whitesmoke;
+        color:black;
+    }
+
+    #flex_Index_MainPage {
+        background: #e8f0fe;
+    }
+
+    .flex2_div{
+        background-color: #e8f0fe;
+    }
+
 
 }
 
@@ -86,6 +113,12 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         height: 100vh;
         width: 100vw;
         margin: 0;
+        padding-bottom: 10px;
+    }
+
+    #QualCSS {
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     header {
@@ -127,17 +160,28 @@ Extra style for cssdemo.html can be added in cssdemo.css */
 
     #flex_Index_MainPage, #flex_Index_Hobbies {
         box-sizing: border-box;
-        margin: 0;
         display: flex;
         max-width: 100vw;
         flex-flow: row wrap;
+        margin-right: 5%;
+        margin-left: 5%;
     }
+
+    #flex_Index_MainPage {
+        padding-top: 20px;
+    }
+
     #flex_Index_Hobbies {
-        padding-bottom: 50px;
+        padding-bottom: 52px;
+        row-gap: 25px;
     }
 
     #flex2_Index {
         padding-bottom: 34px;
+    }
+
+    #interests_DIV {
+        margin: 5%;
     }
 
     .flex1_Div_Demo {
@@ -175,13 +219,14 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         margin: 0;
     }
 
+
     footer {
         text-align: center;
         position: absolute;
         font-size: 12px;
         max-width: 100vw;
-        padding: 0.25rem;
-        top: 0
+        top: 0;
+        padding: 1rem;
     }
 
     #flex_Footer {
@@ -190,7 +235,7 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         max-height: 100vh;
     }
 
-    #VectorImg {
+    .VectorImg {
         width: 32px;
         height: 32px;
     }
@@ -207,6 +252,14 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         max-width: 16vw;
     }
 
+    #StarAVIF {
+        max-width: 90vw;
+    }
+
+    .flex2_div{
+        padding: 2%;
+    }
+
     article {
         padding-bottom: 44px;
     }
@@ -214,6 +267,7 @@ Extra style for cssdemo.html can be added in cssdemo.css */
 
 /* CSS at 1080p */
 @media (min-width: 770px) {
+
     body {
         position: relative;
         min-height: 100vh;
@@ -222,6 +276,11 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         margin: 0;
 
     }
+
+    #QualCSS {
+        margin: 5%
+    }
+
     nav {
         list-style-type: none;
         text-decoration: none;
@@ -234,6 +293,10 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         min-height: 45px;
     }
 
+    #interests_DIV {
+        margin: 5%;
+    }
+
     a.navBar {
         text-decoration: none;
         padding: 12px;
@@ -244,7 +307,7 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         max-width: 100vw;
         max-height: 100vh;
         bottom: 0;
-        padding: 0.5em;
+        padding: 1em;
     }
     #flex_Footer {
         display: flex;
@@ -269,22 +332,27 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         padding: 1em;
     }
 
+    #flex_Index_MainPage {
+        margin: 5%;
+    }
+
     #flex_Index_Intro {
         min-width: 20vw;
-        max-width: 60vw;
+        max-width: 55vw;
     }
 
     .flex2_div{
-        max-width: 45vw;
-
+        width: 45vw;
+        padding: 1%;
     }
 
-    #flex2_Index {
+    .flex_Index_Hobbies {
         flex-direction: row;
         gap: 0;
         flex-wrap: wrap;
         flex-basis: 20vw;
         box-sizing: border-box;
+        padding-bottom: 60px;
     }
 
     .flex1_Div_Demo {
@@ -292,6 +360,13 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         max-width: 75vw;
     }
 
+    #YetAnotherFlexBox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        flex-basis: 100%;
+    }
     #flex1_Demo {
         display: flex;
         flex-direction: row;
@@ -318,10 +393,11 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         border: #242424 3px solid;
     }
 
-    #VectorImg {
-        width: 32px;
-        height: 32px;
+    .VectorImg {
+        width: 64px;
+        height: 64px;
     }
+
     #HTMLVali {
         padding: 4px;
         border: #242424 2px solid;
@@ -339,6 +415,10 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         align-self: center;
         min-width: 2vw;
         max-width: 13vw;
+    }
+
+    #StarAVIF {
+        max-width: 90vw;
     }
 }
 
