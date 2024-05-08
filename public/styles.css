@@ -168,7 +168,7 @@ Extra style for cssdemo.html can be added in cssdemo.css */
     }
 
     #flex_Index_MainPage {
-        padding-top: 20px;
+        padding-top: 35px;
     }
 
     #flex_Index_Hobbies {
@@ -198,7 +198,7 @@ Extra style for cssdemo.html can be added in cssdemo.css */
         max-width: 95vw;
         margin: auto;
         column-gap: 5px;
-        row-gap: 10px;
+        row-gap: 20px;
     }
 
     .photoOfMe {
@@ -257,7 +257,11 @@ Extra style for cssdemo.html can be added in cssdemo.css */
     }
 
     .flex2_div{
-        padding: 2%;
+        padding: 15px;
+    }
+
+    #bottom_Div_Index {
+        padding-bottom: 45px;
     }
 
     article {

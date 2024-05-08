@@ -9,7 +9,7 @@ This should be linked to alongside the main styles.css page */
 
     #cssDemoCSSPlayground {
         margin: 2.5%;
-        padding: 7.5% 2.5% 2.5%;
+        padding: 7.5% 5% 2.5%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -28,7 +28,7 @@ This should be linked to alongside the main styles.css page */
     }
 
     #cssDemoWDICF, #cssDemoHTML\&CSS, #cssDemoWICSS {
-        padding: 2.5%
+        padding: 4%
     }
 
     #cssDemoWDICF {
@@ -126,12 +126,13 @@ This should be linked to alongside the main styles.css page */
 
 * {
     font-family: "Roboto", "Helvetica", "Times New Roman", serif;
-    color: black;
+    color: white;
     max-width: 100vw;
     max-height: 100vh;
 }
 
 h1, h2, h3 {
+    color: white;
     animation: RightSlideNW 2s;
 }
 
@@ -146,6 +147,7 @@ footer, header {
 
 a.navBar {
     background: #3E362E ;
+    border-color: #3E362E ;
 }
 
 a.navBar:hover {
